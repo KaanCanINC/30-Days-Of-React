@@ -4,7 +4,7 @@
 
 <div align="center">
 
-  <h1> 30 Days Of React</h1>
+  <h1> 30 Günde React</h1>
   <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/asabeneh/">
   <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
   </a>
@@ -18,7 +18,7 @@
 
 </div>
 
-[Day 1 >>](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)
+[1.Gün >>](./01_Day_JavaScript_Refresher/01_javascript_refresher.md)
 
 | # Day |                                                           Topics                                                            |
 | ----- | :-------------------------------------------------------------------------------------------------------------------------: |
@@ -54,89 +54,90 @@
 | 29    |                                            [Explore](./29_explore/29_explore.md)                                            |
 | 30    |                                      [Conclusions](./30_conclusions/30_conclusions.md)                                      |
 
-🧡🧡🧡 HAPPY CODING 🧡🧡🧡
+🧡🧡🧡 İYİ KODLAMALAR 🧡🧡🧡
 
 <div>
-<small>Support the <strong>author</strong> to create more educational materials</small> <br />  
+<small>Daha fazla eğitici içerik üretebilmesi için <strong>içerik sahibini destekleyin</strong></small> <br />  
 <a href = "https://www.paypal.me/asabeneh"><img src='./images/paypal_lg.png' alt='Paypal Logo' style="width:10%"/></a>
 </div>
 
 ---
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [How to Use Repo](#how-to-use-repo)
-  - [Star and Fork this Repo](#star-and-fork-this-repo)
-  - [Clone your Fork](#clone-your-fork)
-  - [Create a New Branch](#create-a-new-branch)
-  - [Structure Exercise Solutions](#structure-exercise-solutions)
-  - [Commit Exercise Solutions](#commit-exercise-solutions)
-  - [Update your Fork Daily](#update-your-fork-daily)
-- [Setup](#setup)
-  - [Install Node.js](#install-nodejs)
-  - [Browser](#browser)
-    - [Installing Google Chrome](#installing-google-chrome)
-    - [Opening Google Chrome Console](#opening-google-chrome-console)
-    - [Writing Code on Browser Console](#writing-code-on-browser-console)
+- [Giriş](#introduction)
+- [Gereksinimler](#requirements)
+- [Repo nasıl kullanılır](#how-to-use-repo)
+  - [Bu Repo'yu Yıldızlayın ve Forklayın](#star-and-fork-this-repo)
+  - [Fork'unuzu klonlayın](#clone-your-fork)
+  - [Yeni Branch oluşturun](#create-a-new-branch)
+  - [Structure egzersiz çözümleri](#structure-exercise-solutions)
+  - [Egzersiz çözümlerinizi Commitleyin](#commit-exercise-solutions)
+  - [Fork'unuzu günlük olarak güncelleyin](#update-your-fork-daily)
+- [Kurulum](#setup)
+  - [Node.js yükleyin](#install-nodejs)
+  - [Tarayıcı](#browser)
+    - [Google Chrome yükleme](#installing-google-chrome)
+    - [Google Chrome geliştirici konsolu açma](#opening-google-chrome-console)
+    - [Geliştirici konsolunda kod yazma](#writing-code-on-browser-console)
       - [Console.log](#consolelog)
-      - [Console.log with Multiple Arguments](#consolelog-with-multiple-arguments)
-      - [Comments](#comments)
-      - [Syntax](#syntax)
-    - [Arithmetics](#arithmetics)
-  - [Code Editor](#code-editor)
-    - [Installing Visual Studio Code](#installing-visual-studio-code)
-    - [How to Use Visual Studio Code](#how-to-use-visual-studio-code)
+      - [Çoklu argüman ile Console.log](#consolelog-with-multiple-arguments)
+      - [Yorum satırları](#comments)
+      - [Sözdizimi](#syntax)
+    - [Aritmetik işlemler](#arithmetics)
+  - [Kod editör](#code-editor)
+    - [Visual Studio Code kurulumu](#installing-visual-studio-code)
+    - [Visual Studio Code nasıl kullanılır](#how-to-use-visual-studio-code)
 
 ---
 
-## Introduction
+## Giriş
 
-**Congratulations** on deciding to participate in 30 days of React programming challenge. In this challenge you will learn everything you need to use to develop a React application. In the end of the challenge you will get a 30DaysOfReact programming challenge completion certificate. In case you need help or if you would like to help others you may join the [telegram group](https://t.me/thirtydaysofreact).
+30 Günde React rehberimize katılmaya karar verdiğiniz için **Tebrikler**. Bu rehberimizde React uygulaması geliştirirken ihtiyacınız olacak her şeyi öğreneceksiniz. 30 Günlük programımızın sonunda "30DaysOfReact programming challenge completion" sertifikası alacaksınız. Yardıma ihtiyacınız olduğunda veya başkalarına yardım etmek isterseniz [telegram grubumuza](https://t.me/thirtydaysofreact) katılabilirsiniz.
 
-**A 30DaysOfReact** challenge is a guide for both beginners and advanced JavaScript and React developers. Welcome to 30 Days Of React. React is a JavaScript library. I enjoy using and teaching React and I hope you will do so too.
-In this step by step 30 Days React challenge, you will learn React which is one of most popular user interface JavaScript libraries.
-React can do everything that JavaScript can do. React can be used **_to add interactivity to websites, to develop mobile apps, desktop applications, games_**.
-I believe you will learn quite a lot in the next 30 days and your programming and problem solving skills will also be improved significantly.
+**30GündeReact** hem yeni başlayan hemde ileri seviye JavaScript ve React geliştiricileri için bir rehberdir. 30 Günde React'a hoş geldiniz. React bir JavaScript kütüphanesidir. React'ı kullanmaktan ve öğretmekten keyif alıyorum umarım siz de keyif alırsınız. Adım adım 30 Günde React rehberimizde, en popüler kullanıcı arayüzü JavaScript kütüphanelerinden biri olan React'ı öğreneceksiniz. React, JavaScript'in yapabildiği her şeyi yapabilir. React **_etkileşimli internet siteleri, mobil uygulamalar, masaüstü uygulamalar, oyunlar_** geliştirmek için kullanılabilir. Önümüzdeki 30 günde bir çok şey öğrenceğinize, programlama ve problem çözme becerilerinizi oldukça geliştirebileceğinize inanıyorum.
 
-I will use conversational English and less jargons to write this challenge. The content will be continuously updated. If you find a typo or grammar mistakes don't be surprised because I don't do any proof read before I publish it. I would recommend you to focus on the main message of the challenge instead of the English and some minor mistakes. I really appreciate if you send me pull requests for improvement and remember to pull first from master before you send pull requests. Most of the images I have used in this challenge came from 30DaysOfJavaScript challenge therefore you may need to rename file names and folders 30DaysOfReact.
-If you are good at arrays, loops, functions, objects, functional programming, destructuring and spreading and class then you will be able to follow the challenge properly. Otherwise, I strongly recommend you to check [30DaysOfJavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript).
+Bu rehberi yazarken konuşma dili kullancağım ve jargonları elimden geldiğince az kullanacağım. İçerik sürekli olarak güncellenecektir. Herhangi bir yazım hatası veya gramer hatası bulduysanız şaşırmayın çünkü yayınlamadan önce herhangi bir düzeltme okuması yapmıyorum. Yazım ve bazı küçük hatalar yerine rehberin ana konusuna odaklanmazını tavsiye ederim. Rehberi iyileştirmem için pull request gönderirseniz gerçekten minettar olurum. Lütfen Pull request'i master'dan almayı unutmayın. Bu rehberde kullandığım görsellerin çoğu 30GündeJavaScript rehberinde kullandığım görseller, bu nedenle dosya ve klasör isimlerini 30GündeReact olarak değiştirmeniz gerekebilir. Diziler, döngüler, fonksiyonlar, nesneler, işlevsel programlama, destructuring(parçalama), spreading(yayma) ve sınıflar konusunda iyiseniz bu rehberi iyi bir şekilde takip edebilirsiniz. Aksi taktirde, [30GündeJavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) rehberimize göz atmanızı şiddetle tavsiye ederim.
 
-Before you dive into this course, you may check the [review](https://t.me/thirtydaysofreact) of 30 Days Of React.
+Kursa derinlemesine girmeden önce [30 Günde React incelemesine](https://t.me/thirtydaysofreact) göz atabilirsiniz.
 
-This challenge is easy to read, written in conversational English, engaging, motivating and at the same time, it is very demanding. You need to allocate much time to finish this challenge. If you are a visual learner, you may get the video lesson on <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> YouTube channel. Subscribe the channel, comment and ask questions on YouTube vides and be proactive, the author will eventually notice you. 
+Bu rehber,okuması kolay, konuşma diliyle yazılmış, ilgi çekici, motive edici ve aynı zamanda oldukça zorlayıcıdır. Bu rehberi tamamlayabilmeniz için büyük bir zaman ayırmanız gerekecek. Eğer görsel öğrenmeye yatkınsanız, video dersi <a href="https://www.youtube.com/channel/UC7PNRuno1rzYPb1xLa4yktw"> Washera</a> Youtube kanalında bulabilirsiniz. Kanala abone olun, videolara yorum yapın ve sorular sorun; proaktif olun, İçerik sahibi size cevap verecektir.
 
-The author likes to hear your opinion about the challenge, share your thoughts about the 30DaysOfJavaScript challenge. You can leave your testimonial on this [link](https://testimonial-vdzd.onrender.com/)
+İçerik sahibi rehber hakkındaki fikirlerinizi duymaktan mutluluk duyar, 30GündeJavaScript rehberi hakkındaki düşüncelerinizi paylaşın. Referansınızı bu bağlantıya bırakabilirsiniz [link](https://testimonial-vdzd.onrender.com/)
 
-## Requirements
+## Gereksinimler
 
-To get along with the challenge you need to have the following:
+Bu rehberi takip edebilmeniz için sahip olmanız gereken bazı şeyler:
 
-1. Motivation
-2. A computer
-3. Internet
-4. A browser
-5. A code editor
-6. HTML, CSS and JavaScript intermediate level skill
+1. Motivasyon
+2. Bilgisayar
+3. İnterner
+4. Tarayıcı
+5. Kod editörü
+6. Orta seviye HTML, CSS ve JavaScript bilgisi
 
-## How to Use Repo
+## Repo nasıl kullanılır
 
-### Star and Fork this Repo
+Yeni Branch oluşturun
+Structure egzersiz çözümleri
+Egzersiz çözümlerinizi Commitleyin
+Fork'unuzu günlük olarak güncelleyin
 
-Star this repo to support this work and Fork the repo to create your own copy to work from.
+### Bu Repo'yu Yıldızlayın ve Forklayın
 
-### Clone your Fork
+Çalışmayı desteklemek için bu repoyu yıldızlayın. Üzerinde çalışabileceğiniz bir kopyasını oluşturmak için bu repoyu forklayın.
 
-You should always work directly from your forked copy.
+### Fork'unuzu klonlayın
+
+Her zaman forkladığınız kopyanızdan çalışın.
 
 ```bash
-# note that an `ssh` link is used here, but an `https` link will work the same
+# Not: Burada `ssh` bağlantısı kullanılmıştır, fakat `https` bağlantısı'da aynı işlevi görecektir
 git clone git@github.com:username/30-Days-Of-React.git
 cd 30-Days-Of-React
 ```
 
-### Create a New Branch
+### Yeni bir Branch oluşturun
 
-To complete daily exercises, my suggestion is to create a separate branch to house your exercise folder or any other changes you make. This will keep your master branch clean at all times, which means your master will always be similar to the original master.
+Günlük egzersizleri tamamlamak için, my suggestion is to create a separate branch to house your exercise folder or any other changes you make. This will keep your master branch clean at all times, which means your master will always be similar to the original master.
 
 ```bash
 git checkout -b exercise-solutions # `-b` creates the branch if it does not exist
@@ -262,7 +263,7 @@ Ctl+Shift+I
 To write our first JavaScript code, we used a built-in function **console.log()**. We passed an argument as input data, and the function displays the output. We passed 'Hello, World' as input data or argument in the console.log() function.
 
 ```js
-console.log('Hello, World!')
+console.log("Hello, World!");
 ```
 
 ##### Console.log with Multiple Arguments
@@ -272,9 +273,9 @@ The **console.log()** function can take multiple parameters separated by comma. 
 ![console log multiple arguments](./images/console_log_multipl_arguments.png)
 
 ```js
-console.log('Hello', 'World', '!')
-console.log('HAPPY', 'NEW', 'YEAR', 2020)
-console.log('Welcome', 'to', 30, 'Days', 'Of', 'JavaScript')
+console.log("Hello", "World", "!");
+console.log("HAPPY", "NEW", "YEAR", 2020);
+console.log("Welcome", "to", 30, "Days", "Of", "JavaScript");
 ```
 
 As you can see from the snippet code above, _console.log()_ can take multiple arguments. It is recommended to use as many console.log() prints to check what is happening in your code but don't keep all console.log() tests on your code forever. Make your life easy by keeping the browser console open.
@@ -306,17 +307,17 @@ Programming languages are similar to human languages. English or many other lang
 I made a deliberate mistake. As a result, the console raises syntax errors. Actually, the syntax is very informative. It informs what type of mistake was made. By reading the error feedback guideline, we can correct the syntax and fix the problem. The process of identifying and removing errors from a program is called debugging. Let us fix the errors:
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
+console.log("Hello, World!");
+console.log("Hello, World!");
 ```
 
 So far, we saw how to display text using the _console.log()_. If we are printing text or string using _console.log()_, the text has to be inside the single quotes, double quotes, or a backtick quotes.
 **Example:**
 
 ```js
-console.log('Hello, World!')
-console.log('Hello, World!')
-console.log(`Hello, World!`)
+console.log("Hello, World!");
+console.log("Hello, World!");
+console.log(`Hello, World!`);
 ```
 
 #### Arithmetics
@@ -328,12 +329,12 @@ The console can directly take arguments without the **_console.log()_** function
 ![Arithmetic](images/arithmetic.png)
 
 ```js
-console.log(2 + 3) // Addition
-console.log(3 - 2) // Subtraction
-console.log(2 * 3) // Multiplication
-console.log(3 / 2) // Division
-console.log(3 % 2) // Modulus - finding remainder
-console.log(3 ** 2) // Exponentiation 3 ** 2 == 3 * 3
+console.log(2 + 3); // Addition
+console.log(3 - 2); // Subtraction
+console.log(2 * 3); // Multiplication
+console.log(3 / 2); // Division
+console.log(3 % 2); // Modulus - finding remainder
+console.log(3 ** 2); // Exponentiation 3 ** 2 == 3 * 3
 ```
 
 ### Code Editor
