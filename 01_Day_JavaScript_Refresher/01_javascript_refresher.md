@@ -565,39 +565,39 @@ console.log(countries);
 
 Dizileri manipüle etmek için farklı metotlar vardır. Dizileri manipüle etmemize yarayan bazı metotlar şunlardır:_Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift_
 
-##### Array Constructor
+##### Array Constructor(Array yapıcısı) ( Array() )
 
-Array:To create an array.
+Array:Bir dizi oluşturur.
 
 ```js
-const arr = Array(); // creates an an empty array
+const arr = Array(); // Boş bir dizi oluşturur
 console.log(arr);
 
-const eightEmptyValues = Array(8); // it creates eight empty values
+const eightEmptyValues = Array(8); // 8 değerli boş bir dizi oluşturdu
 console.log(eightEmptyValues); // [empty x 8]
 ```
 
-##### Creating static values with fill
+##### fill ile statik değerler oluşturma ( fill() )
 
-fill: Fill all the array elements with a static value
+fill: Dizi içerisine statik değerler doldurur
 
 ```js
-const arr = Array(); // creates an an empty array
+const arr = Array(); // Boş bir dizi oluşturur
 console.log(arr);
 
-const eightXvalues = Array(8).fill("X"); // it creates eight element values filled with 'X'
+const eightXvalues = Array(8).fill("X"); // 8 değerli boş bir dizi oluşturur ve içerisine 8 adet 'X' ile doldurur
 console.log(eightXvalues); // ['X', 'X','X','X','X','X','X','X']
 
-const eight0values = Array(8).fill(0); // it creates eight element values filled with '0'
+const eight0values = Array(8).fill(0); // 8 değerli boş bir dizi oluşturur ve içerisine 8 adet '0' ile doldurur'
 console.log(eight0values); // [0, 0, 0, 0, 0, 0, 0, 0]
 
-const four4values = Array(4).fill(4); // it creates 4 element values filled with '4'
+const four4values = Array(4).fill(4); // 4 değerli boş bir dizi oluşturur ve içerisine 4 adet '4' ile doldurur
 console.log(four4values); // [4, 4, 4, 4]
 ```
 
-##### Concatenating array using concat
+##### concat ile dizi birleştirme ( concat() )
 
-concat:To concatenate two arrays.
+concat:İki diziyi birleştirir.
 
 ```js
 const firstList = [1, 2, 3];
@@ -608,9 +608,9 @@ console.log(thirdList); // [1, 2, 3, 4, 5, 6]
 ```
 
 ```js
-const fruits = ["banana", "orange", "mango", "lemon"]; // array of fruits
-const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]; // array of vegetables
-const fruitsAndVegetables = fruits.concat(vegetables); // concatenate the two arrays
+const fruits = ["banana", "orange", "mango", "lemon"]; // meyve dizisi
+const vegetables = ["Tomato", "Potato", "Cabbage", "Onion", "Carrot"]; // sebze dizisi
+const fruitsAndVegetables = fruits.concat(vegetables); // iki diziyi birleştir
 
 console.log(fruitsAndVegetables);
 ```
@@ -619,18 +619,18 @@ console.log(fruitsAndVegetables);
 ["banana", "orange", "mango", "lemon", "Tomato", "Potato", "Cabbage", "Onion", "Carrot"]
 ```
 
-##### Getting array length
+##### Dizinin boyutunu öğrenme ( length() )
 
-Length:To know the size of the array
+Length:Dizinin boyutunu döndürür
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.length); // -> 5 is the size of the array
+console.log(numbers.length); // dizinin boyutu --> 5
 ```
 
-##### Getting index of an element in an array
+##### Dizi elemanlarının indexini öğrenme ( indexOf() )
 
-indexOf:To check if an item exist in an array. If it exists it returns the index else it returns -1.
+indexOf:Elemanın dizi içerisinde var olup olmadığını kontrol eder. Eleman dizi varsa elemanın indexini döndürür, yoksa -1 döndürür.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -641,12 +641,12 @@ console.log(numbers.indexOf(1)); // -> 0
 console.log(numbers.indexOf(6)); // -> -1
 ```
 
-Check an element if it exist in an array.
+Eleman dizi içerisinde var mı kontrol et.
 
-- Check items in a list
+- Listedeki öğeleri kontrol et
 
 ```js
-// let us check if a banana exist in the array
+// Dizide 'banana' öğesinin var olup olmadığını kontrol edelim
 
 const fruits = ["banana", "orange", "mango", "lemon"];
 let index = fruits.indexOf("banana"); // 0
@@ -658,12 +658,12 @@ if (index != -1) {
 }
 // This fruit does exist in the array
 
-// we can use also ternary here
+// Ayrıca kısa if'te kullanabiliriz
 index != -1
   ? console.log("This fruit does exist in the array")
   : console.log("This fruit does not exist in the array");
 
-// let us check if a avocado exist in the array
+// Dizide 'avocado' öğesinin var olup olmadığını kontrol edelim
 let indexOfAvocado = fruits.indexOf("avocado"); // -1, if the element not found index is -1
 if (indexOfAvocado != -1) {
   console.log("This fruit does exist in the array");
@@ -673,9 +673,9 @@ if (indexOfAvocado != -1) {
 // This fruit does not exist in the array
 ```
 
-##### Getting last index of an element in array
+##### Dizi içerisindeki son elemanın indexini öğrenelim  ( lastIndexOf() )
 
-lastIndexOf: It gives the position of the last item in the array. If it exist, it returns the index else it returns -1.
+lastIndexOf: Dizi içerisinde yer alan son elemanın indexini verir. Varsa, indexini döndürür, yoksa -1 döndürür.
 
 ```js
 const numbers = [1, 2, 3, 4, 5, 3, 1, 2];
@@ -687,7 +687,7 @@ console.log(numbers.lastIndexOf(4)); //  3
 console.log(numbers.lastIndexOf(6)); // -1
 ```
 
-includes:To check if an item exist in an array. If it exist it returns the true else it returns false.
+includes:Dizi içerisinde Elemanın var olup olmadığını kontrol eder. Varsa, 'true' yoksa 'false' döndürür.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -711,9 +711,9 @@ console.log(webTechs.includes("Node")); // true
 console.log(webTechs.includes("C")); // false
 ```
 
-##### Checking array
+##### Dizi kontrol etme  ( Array.isArray() )
 
-Array.isArray:To check if the data type is an array
+Array.isArray:Veri türünün 'Array' olup olmadığını kontrol eder.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -723,9 +723,9 @@ const number = 100;
 console.log(Array.isArray(number)); // false
 ```
 
-##### Converting array to string
+##### Dizileri stringe çevirme  ( toString() )
 
-toString:Converts array to string
+toString:Dizileri stringe çevirir
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -735,9 +735,9 @@ const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
 console.log(names.toString()); // Asabeneh,Mathias,Elias,Brook
 ```
 
-##### Joining array elements
+##### Dizi elemanlarını birleştirme ( join() )
 
-join: It is used to join the elements of the array, the argument we passed in the join method will be joined in the array and return as a string. By default, it joins with a comma, but we can pass different string parameter which can be joined between the items.
+join: Dizi elemanlarını birleştirmek için kullanılır, join metotuna verdiğimiz parametre birleştirilecek ve string olarak döndürülecektir. Varsayılan olarak virgülle birleştirilir, fakat elemanları birleştirmek için farklı string parametreleri verebiliriz.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
@@ -765,42 +765,42 @@ console.log(webTechs.join()); // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
 console.log(webTechs.join(" # ")); // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
 ```
 
-##### Slice array elements
+##### Dizi elemanlarını bölme ( Slice() )
 
-Slice: To cut out a multiple items in range. It takes two parameters:starting and ending position. It doesn't include the ending position.
+Slice: Verilen aralıktaki belirli öğeleri bölmek için kullanılır. İki adet parametre alır; başlangıç ve bitiş konumu. Bitiş konumu dahil etmez.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.slice()); // -> it copies all  item
-console.log(numbers.slice(0)); // -> it copies all  item
-console.log(numbers.slice(0, numbers.length)); // it copies all  item
-console.log(numbers.slice(1, 4)); // -> [2,3,4] // it doesn't include the ending position
+console.log(numbers.slice()); // -> bütün öğeleri kopyalar
+console.log(numbers.slice(0)); // -> bütün öğeleri kopyalar
+console.log(numbers.slice(0, numbers.length)); // bütün öğeleri kopyalar
+console.log(numbers.slice(1, 4)); // -> [2,3,4] // bitiş konumunu dahil etmez
 ```
 
-##### Splice method in array
+##### Dizilerde splice() metotu ( splice() )
 
-Splice: It takes three parameters:Starting position, number of times to be removed and number of items to be added.
+Splice: Üç adet parametre alır:Başlangıç konumu, diziden silinecek eleman sayısı ve eklenecek eleman sayısı.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
 
-console.log(numbers.splice()); // -> remove all items
+console.log(numbers.splice()); // -> tüm öğeleri sil
 ```
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.splice(0, 1)); // remove the first item
+console.log(numbers.splice(0, 1)); // ilk öğeyi sil
 ```
 
 ```js
 const numbers = [1, 2, 3, 4, 5, 6];
-console.log(numbers.splice(3, 3, 7, 8, 9)); // -> [1, 2, 3, 7, 8, 9] //it removes three item and replace three items
+console.log(numbers.splice(3, 3, 7, 8, 9)); // -> [1, 2, 3, 7, 8, 9] // 3.indexten başlayarak 3 öğe siler ve yerine belirtilen 3 elemanı ekler
 ```
 
-##### Adding item to an array using push
+##### push() kullanarak diziye eleman ekleme ( push() )
 
-Push: adding item in the end. To add item to the end of an existing array we use the push method.
+Push: Verilen elemanı dizinin sonuna ekler. push() metotu var olan bir dizinin sonuna verilen elemanı ekler.
 
 ```js
 // syntax
@@ -817,7 +817,7 @@ numbers.push(6);
 
 console.log(numbers); // -> [1,2,3,4,5,6]
 
-numbers.pop(); // -> remove one item from the end
+numbers.pop(); // -> sondan bir öğe sil
 console.log(numbers); // -> [1,2,3,4,5]
 ```
 
@@ -831,46 +831,46 @@ fruits.push("lime");
 console.log(fruits); // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 ```
 
-##### Removing the end element using pop
+##### pop() kullanarak dizi sonundan eleman silme ( pop() )
 
-pop: Removing item in the end.
+pop: Dizi sonundan eleman siler.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-numbers.pop(); // -> remove one item from the end
+numbers.pop(); // -> sondan bir eleman sil
 
 console.log(numbers); // -> [1,2,3,4]
 ```
 
-##### Removing an element from the beginning
+##### Dizi başından bir eleman silme ( shift() )
 
-shift: Removing one array element in the beginning of the array.
+shift: Dizinin başından bir elemanı siler.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-numbers.shift(); // -> remove one item from the beginning
+numbers.shift(); // -> Dizi başındaki bir elemanı sil
 
 console.log(numbers); // -> [2,3,4,5]
 ```
 
-##### Add an element from the beginning
+##### Dizi başına bir eleman ekleme ( unshift() )
 
-unshift: Adding array element in the beginning of the array.
+unshift: Dizinin başına bir elemanı ekler.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-numbers.unshift(0); // -> add one item from the beginning
+numbers.unshift(0); // -> Dizi başına bir elemanı ekle
 
 console.log(numbers); // -> [0,1,2,3,4,5]
 ```
 
-##### Reversing array order
+##### Diziyi tersine sıralama ( reverse() )
 
-reverse: reverse the order of an array.
+reverse: Dizi sıralamasını tersine çevirir.
 
 ```js
 const numbers = [1, 2, 3, 4, 5];
-numbers.reverse(); // -> reverse array order
+numbers.reverse(); // -> Diziyi tersine sırala
 
 console.log(numbers); // [5, 4, 3, 2, 1]
 
