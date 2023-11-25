@@ -1,0 +1,14 @@
+.frontEndTech {
+  width: 100%;
+  text-align: center;
+}
+
+.frontEndHeader {
+  margin: 40px 0;
+}
+
+.logo {
+  max-height: 25vh;
+  object-fit: contain;
+  margin: 0 100px;
+}
