@@ -13,7 +13,7 @@ const Subscribe = () => (
         </h1>
         <p className="subscribeText">
           <Text>
-            haberlerden ve yeniliklerden haberdar olabilmek için üye olun
+            haberlerden ve yeniliklerden anında haberdar olmak için üye olun
           </Text>
         </p>
       </div>
