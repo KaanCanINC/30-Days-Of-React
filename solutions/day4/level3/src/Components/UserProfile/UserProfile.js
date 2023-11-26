@@ -1,10 +1,10 @@
 import React from "react";
-import {User, JoinDate} from "../User/User";
+import { User, JoinDate } from "../User/User";
 import SkillCards from "../SkillCards/SkillCards";
 
 const UserProfile = () => (
   <div className="userContainer">
-    <div className="UserProfile">
+    <div className="userProfile">
       <User />
       <SkillCards />
       <JoinDate />

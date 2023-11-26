@@ -4,7 +4,7 @@ import { MdOutlineWatchLater } from "react-icons/md";
 
 const users = [
   {
-    profilePhoto: "https://via.placeholder.com/350/f66b97",
+    profilePhoto: "https://i.imgur.com/clhul0V.jpg",
     name: "KaanCan",
     surName: "INC",
     userInfo: "Junior Developer",
@@ -19,19 +19,28 @@ export const User = () => <UserFormat />;
 
 export const JoinDate = () => (
   <div className="joinDate">
-    <MdOutlineWatchLater />
-    {joinDate}
+    <div className="joinDateIcon">
+      <MdOutlineWatchLater />
+    </div>
+    <p className="joinDateText">{joinDate}</p>
   </div>
 );
 
 const UserFormat = () => {
   return users.map((user, index) => (
     <div key={index}>
-      <img src={user.profilePhoto} alt="ProfilePhoto" />
-      <h1>
-        {`${user.name} ${user.surName}`} {user.verify && <FaCheckCircle />}
-      </h1>
-      <p>{`${user.userInfo} ${user.location}`}</p>
+      <img
+        src={user.profilePhoto}
+        alt="ProfilePhoto"
+        className={`${user.name.toLowerCase()}ProfilePhoto`}
+      />
+      <div className="profileText">
+        <h1
+          className={`${user.name.toLowerCase()}Name`}
+        >{`${user.name} ${user.surName}`}</h1>
+        {user.verify && <FaCheckCircle />}
+      </div>
+      <p className="userDescription">{`${user.userInfo}, ${user.location}`}</p>
     </div>
   ));
 };

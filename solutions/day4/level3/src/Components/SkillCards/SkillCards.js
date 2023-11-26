@@ -1,14 +1,20 @@
 import React from "react";
 
-const skills = ["HTML", "CSS", "JavaScript", "React", "SCSS", "GİT", "Linux"];
+const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "SCSS",
+  "GİT",
+  "Linux",
+];
 
 const SkillCards = () => (
-  <div className="skillsContainer">
-    <div className="skillsHeaderSection">
-      <h3 className="skillsHeader">SKILLS</h3>
-    </div>
-    <div className="skillsSection">
-      <ul className="skillsList">
+  <div className="skillCardsContainer">
+    <h3 className="skillHeader">SKILLS</h3>
+    <div className="skillCards">
+      <ul className="skillLists">
         <SkillsMap />
       </ul>
     </div>

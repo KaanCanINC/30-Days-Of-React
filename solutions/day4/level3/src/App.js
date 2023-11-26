@@ -4,12 +4,16 @@ import UserProfile from "./Components/UserProfile/UserProfile";
 function App() {
   return (
     <div className="App">
-      {/* <ColorGenerator />
+      <div className="colorGeneratorPage">
+        {/* <ColorGenerator />
       <ColorGenerator />
       <ColorGenerator />
       <ColorGenerator />
       <ColorGenerator /> */}
-      <UserProfile />
+      </div>
+      <div className="userProfilePage">
+        <UserProfile />
+      </div>
     </div>
   );
 }
