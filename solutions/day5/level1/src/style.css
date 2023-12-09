@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.techs-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.techs-wrapper h2 {
+  margin: 40px 0;
+}
+
+ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+img {
+  max-height: 25vh;
+  object-fit: contain;
+  margin: 0 100px;
+}
+
+.subscribe-wrapper {
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(132, 219, 215);
+  margin-top: 50px;
+  padding-top: 50px;
+  width: 95%;
+  height: 400px;
+  border-radius: 13px;
+}
+/* 
+.textSection {
+  padding-top: 50px;
+} */
+
+.subscribe-wrapper h1 {
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.subscribe-wrapper h3 {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  font-weight: 500;
+}
+
+input {
+  height: 40px;
+  width: 220px;
+  border: 0;
+  border-radius: 10px;
+  margin: 0 7px;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  background-color: #ee5656;
+  color: #fff;
+  border: 0;
+  width: 330px;
+  height: 45px;
+  border-radius: 10px;
+  margin-top: 35px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #ee5656a1;
+  cursor: pointer;
+}
