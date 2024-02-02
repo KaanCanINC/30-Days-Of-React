@@ -1,5 +1,8 @@
 import React from "react";
 import NumberCards from "./components/numberCards/NumberCards";
+import HexColor from "./components/card/HexColor";
+import { tenHighestPopulation } from "./data/countries";
+import Countries from "./components/WorldPopulation/WorldPopulation";
 
 function App() {
   const dataArray = [...Array(32).keys()];
@@ -11,11 +14,11 @@ function App() {
       </div>
       <hr />
       <div className="fullHeightContainer">
-        <NumberCards numbers={dataArray} />
+        <HexColor/>
       </div>
       <hr />
       <div className="fullHeightContainer">
-        <NumberCards numbers={dataArray} />
+        <Countries countries={tenHighestPopulation}/>
       </div>
     </div>
   );

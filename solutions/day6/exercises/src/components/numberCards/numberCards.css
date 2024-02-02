@@ -1,8 +1,9 @@
 body {
   background-color: #222831;
+   color:#fff;
+   font-family: sans-serif;
 }
 .numberCards {
-  color: #fff;
   width: 50px;
   height: 50px;
   padding: 2rem;
@@ -21,7 +22,7 @@ body {
 .prime {
   background-color: #fd5e53;
 }
-ul {
+.numberCardsList {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(8, 0fr);
@@ -31,11 +32,11 @@ ul {
   margin-block: 0;
 }
 
-.numberGeneratorList {
-  margin-top: 1rem;
+.numberCardsListContainer {
+  margin-top: 2rem;
 }
 
-.numberGeneratorHeader {
+.numberCardsHeader {
   text-align: center;
   & * {
     margin-block: 0;

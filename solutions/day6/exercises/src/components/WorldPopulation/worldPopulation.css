@@ -1,0 +1,48 @@
+/* worldPopulation.css */
+
+/* Ana konteynerin stilleri */
+
+.worldPopulationApp {
+  margin-top: 3rem;
+}
+
+.worldPopulationAppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Başlık stilleri */
+.numberCardsHeader {
+  text-align: center;
+}
+
+/* WorldPopulation bileşeninin stilleri */
+.worldPopulationList {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 2rem;
+  font-size: 28px;
+}
+
+/* Ülke adı stil */
+.worldPopulationCountry {
+   position: absolute;
+   left: 15%;
+}
+
+/* Nüfus çubuğu stil */
+.worldPopulationBar {
+  height: 25px;
+  background-color: #ffa500;
+   margin-left: 15%;
+   
+}
+
+/* Nüfus stil */
+.WorldPopulation {
+  position: absolute;
+   right: 15%;
+
+}

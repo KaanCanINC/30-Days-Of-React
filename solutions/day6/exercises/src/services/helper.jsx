@@ -20,3 +20,19 @@ export function isPrime(num) {
   }
   return true;
 }
+
+export function hexColorGenerator(cardCount, colorArray) {
+    const str = "0123456789abcdef";
+    for (let i = 0; i < cardCount; i++) {
+      let color = "#";
+      for (let j = 0; j < 6; j++) {
+        let index = Math.floor(Math.random() * str.length);
+        color += str[index];
+      }
+
+      colorArray.push(color);
+    }
+
+    return colorArray;
+  };
+
