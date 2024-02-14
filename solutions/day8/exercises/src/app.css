@@ -1,0 +1,222 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1.5;
+  font-weight: 300;
+  color: black;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  min-height: 100%;
+  height: 98vh;
+}
+
+.header-wrapper,
+.main-wrapper,
+.footer-wrapper {
+  width: 85%;
+  margin: auto;
+}
+
+.header-wrapper,
+.main-wrapper {
+  padding: 10px;
+  margin: 2px auto;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 300;
+}
+
+h2,
+h3 {
+  font-weight: 300;
+}
+
+header {
+  background-color: #61dbfb;
+  padding: 25;
+  padding: 10px;
+}
+
+main {
+  padding: 10px;
+  padding-bottom: 60px;
+  /* Height of the footer */
+}
+
+ul {
+  margin-left: 15px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.logo {
+  width: 250px;
+  border-radius: 50%;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  background: #6cf;
+  font-weight: 400;
+  width: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+.user-card {
+  margin-top: 10px;
+}
+.user-card > img {
+  border-radius: 50%;
+  width: 14%;
+}
+
+.divider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border: 1px solid #fff;
+}
+
+.randomFlag {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 40rem;
+  padding: 50px 0;
+  margin: 0 auto;
+  position: absolute;
+  top: 30vh;
+  right: 15vh;
+}
+
+.country {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  & h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+.countryInfo {
+  margin: 0 40px;
+  font-weight: 500;
+}
+.infoHeader {
+  font-weight: bold;
+}
+
+.randomFlagBtn {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-wrapper,
+  .main-wrapper,
+  .footer-wrapper {
+    width: 100%;
+    margin: auto;
+  }
+
+  .header-wrapper,
+  .main-wrapper {
+  }
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+  }
+
+  h2,
+  h3 {
+    font-weight: 300;
+  }
+
+  header {
+    background-color: #61dbfb;
+    padding: 25px;
+    padding: 10px;
+  }
+
+  ul {
+    margin-left: 15px;
+  }
+
+  ul li {
+    list-style: none;
+  }
+
+  .logo {
+    width: 25vh;
+    border-radius: 50%;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    background: #6cf;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    line-height: 60px;
+  }
+  .user-card {
+    margin-top: 10px;
+  }
+  .user-card > img {
+    border-radius: 50%;
+    width: 14%;
+  }
+
+  .divider {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border: 1px solid #fff;
+  }
+
+  .randomFlag {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+    padding: 50px 0;
+    margin: 0 auto;
+    margin-top: 2rem;
+    position: static;
+  }
+
+  .country {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    & h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
+  .countryInfo {
+    margin: 0 40px;
+    font-weight: 500;
+  }
+  .infoHeader {
+    font-weight: bold;
+  }
+}
