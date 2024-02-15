@@ -1,4 +1,4 @@
-export async function countries(){ try{
+export async function countries(num){ try{
       const response = await fetch('https://restcountries.com/v3.1/all')
 
       if(!response.ok){
@@ -6,7 +6,7 @@ export async function countries(){ try{
       }
 
       const data = await response.json();
-      return data[Math.floor(Math.random() * data.length)];
+      return data[num];
    
    }
    catch(error){

@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import * as helper from "./utils/helper";
 
+import { countries } from "./utils/api";
 class App extends React.Component {
   state = {
     count: 0,
@@ -13,9 +14,31 @@ class App extends React.Component {
       backgroundColor: "",
       color: "",
     },
+    country: null,
+    randomNumber: Math.floor(Math.random() * 251),
   };
 
+  componentDidMount() {
+    this.fetchData();
+  }
+
+  async fetchData() {
+    try {
+      const data = await countries(this.state.randomNumber);
+      this.setState({ country: data });
+      console.log(data);
+    } catch (error) {
+      console.error("veri alinamadi", error);
+    }
+  }
+
   render() {
+    const { country } = this.state;
+    console.log(country);
+    if (!country) {
+      return <div>bekle anani sikerim</div>;
+    }
+
     const data = {
       welcome: "30 Günde React kursuna hoşgeldiniz",
       title: "Reacta başlarken",
@@ -42,6 +65,8 @@ class App extends React.Component {
           minusOne={helper.minusOne.bind(this)}
           count={this.state.count}
           style={this.state.styles}
+          country={this.state.country}
+          randomFlag={helper.randomFlag.bind(this)}
         />
         <Footer date={date} style={this.state.styles} />
       </div>

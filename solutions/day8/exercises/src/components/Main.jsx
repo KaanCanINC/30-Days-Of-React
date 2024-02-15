@@ -5,35 +5,13 @@ import { buttonStyles } from "./Button";
 import React from "react";
 import Button from "./Button";
 import RandomFlag from "./RandomFlag";
-import { countries } from "../utils/api";
 
 class Main extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { country: null };
-  }
-
-  componentDidMount() {
-    this.fetchData();
-  }
-
-  async fetchData() {
-    try {
-      const data = await countries();
-      this.setState({ country: data });
-      console.log(data);
-    } catch (error) {
-      console.error("veri alinamadi", error);
-    }
   }
 
   render() {
-    const { country } = this.state;
-
-    if (!country) {
-      return <div>bekle anani sikerim</div>;
-    }
-
     const {
       techs,
       user,
@@ -44,6 +22,8 @@ class Main extends React.Component {
       addOne,
       minusOne,
       style,
+      country,
+      randomFlag,
     } = this.props;
 
     return (
@@ -75,6 +55,7 @@ class Main extends React.Component {
             population={country.population}
             languages={Object.values(country.languages)[0]}
             currency={Object.values(country.currencies)[0].name}
+            func={randomFlag}
           />
         </div>
       </main>

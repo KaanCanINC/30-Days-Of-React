@@ -10,7 +10,6 @@ export function minusOne() {
 
 export function handleTime() {
   alert(showDate(new Date()));
-  console.log("https://restcountries.com/v3.1/all");
 }
 
 export function greetPeople() {
@@ -33,3 +32,9 @@ export function changeBackground() {
 }
 
 
+export function randomFlag() {
+  const randomFlagIndex = Math.floor(Math.random() * 251); // Rastgele bir ülke indisini al
+  this.setState({ randomNumber: randomFlagIndex }, () => {
+    this.fetchData(); // Veriyi güncellemek için fetchData fonksiyonunu çağır
+  });
+}
